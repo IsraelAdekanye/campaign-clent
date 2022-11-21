@@ -1,0 +1,98 @@
+import React, { useState } from 'react';
+
+const Donate = () => {
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phoneNumber, setPhoneNumber] = useState('');
+    const [gender, setGender] = useState('');
+    const [submitted, setStatus] = useState(false);
+    const [uuid, setUUID] = useState(((Date.now().toString(36)).toUpperCase()))
+
+    
+    const createAttendee = async(e)=> {
+        e.preventDefault()
+        //(Date.now().toString(36) +'-'+ Math.random().toString(36).substring(2)).toUpperCase()
+        setUUID((Date.now().toString(36)).toUpperCase());
+        const postParams = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(
+                {firstName, lastName, email,
+                phoneNumber, gender, uuid
+            })
+        }
+        await fetch(process.env.REACT_APP_REGISTER_URL, postParams)
+        .then(res => {
+            if (res.status === 200) {
+              setStatus(true)
+                
+                // setFirstName(''); setLastName(''); setEmail(''); 
+                // setPhoneNumber(''); setGender('');
+                
+            }
+         })
+    }
+
+    const registrationForm = () => {
+      return(
+        
+        <div className='row'>
+        <div className="col-md-12">
+        <form onSubmit={createAttendee}>
+        <h1 className='registerH1'> Make Donation</h1>
+        <fieldset>
+    
+        <label>First Name:</label>
+        <input type="text" id="name" name="user_name" 
+        onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
+    
+        <label>Surname:</label>
+        <input type="text" id="name" name="user_name" 
+        onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
+      
+        <label>Email:</label>
+        <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
+        onChange={e => setEmail(e.target.value.trim())} value={email} required/>
+    
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder='08023456789' pattern="[0]{1}[0-9]{10}"
+        onChange={e => setPhoneNumber(e.target.value.trim())} value={phoneNumber} required/>
+    
+        </fieldset>
+    
+        <button type="submit">Donate</button>
+        </form>
+        </div>
+      </div>
+      )
+    }
+
+    const successPage = () => {
+      return (<form>
+      <section>
+        {/* <div className="card"> */}
+        <div className="cond2Div">
+          <i className="checkmark">✓</i>
+        </div>
+          <h1 className="success">Registration Successful</h1> 
+          <br/>
+          <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{uuid}</b><br/><br/>Your ticket is on its way to your mail!</p>
+        {/* </div> */}
+      </section>
+      </form>)
+    }
+
+  return (
+    <div>
+      {submitted? 
+      successPage()
+       :
+       registrationForm()
+       }
+    </div>
+  );
+}
+
+export default Donate;
