@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import axios from "axios";
 const Donate = () => {
 
     const [firstName, setFirstName] = useState('');
@@ -13,30 +13,17 @@ const Donate = () => {
     
     const makeDonation = async(e)=> {
         e.preventDefault()
-        // const postParams = {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify(
-        //         {firstName, lastName, email,
-        //         phoneNumber, amount
-        //     })
-        // }
-        // await fetch(process.env.REACT_APP_DONATION_URL, postParams)
-        // .then(res => {
-        //     if (res.status === 200) {
-        //       //setStatus(true)
-        //       //console.log(res);
-        //       let a = res.json
-        //       setData(a)
-        //       console.log(data.authorization_url);
-                
-        //         // setFirstName(''); setLastName(''); setEmail(''); 
-        //         // setPhoneNumber(''); setGender('');
-                
-        //     }
-        //  })
 
-        
+        await axios.post(process.env.REACT_APP_DONATION_URL, 
+            {firstName, lastName, email, phoneNumber, amount})
+          .then(res => {
+            if (res.status === 200) {
+              console.log(res.data);
+            }
+         })
+          .catch((error)=> {
+            console.log(error);
+          });
     }
 
     const donationForm = () => {
