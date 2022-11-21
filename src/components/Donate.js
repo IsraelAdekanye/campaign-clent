@@ -6,12 +6,12 @@ const Donate = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [gender, setGender] = useState('');
+    const [amount, setAmount] = useState('');
     const [submitted, setStatus] = useState(false);
     const [uuid, setUUID] = useState(((Date.now().toString(36)).toUpperCase()))
 
     
-    const createAttendee = async(e)=> {
+    const makeDonation = async(e)=> {
         e.preventDefault()
         //(Date.now().toString(36) +'-'+ Math.random().toString(36).substring(2)).toUpperCase()
         setUUID((Date.now().toString(36)).toUpperCase());
@@ -20,10 +20,10 @@ const Donate = () => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(
                 {firstName, lastName, email,
-                phoneNumber, gender, uuid
+                phoneNumber, amount, uuid
             })
         }
-        await fetch(process.env.REACT_APP_REGISTER_URL, postParams)
+        await fetch(process.env.REACT_APP_DONATION_URL, postParams)
         .then(res => {
             if (res.status === 200) {
               setStatus(true)
@@ -35,12 +35,12 @@ const Donate = () => {
          })
     }
 
-    const registrationForm = () => {
+    const donationForm = () => {
       return(
         
         <div className='row'>
         <div className="col-md-12">
-        <form onSubmit={createAttendee}>
+        <form onSubmit={makeDonation}>
         <h1 className='registerH1'> Make Donation</h1>
         <fieldset>
     
@@ -59,6 +59,10 @@ const Donate = () => {
         <label>Phone Number:</label>
         <input type="tel" id="phone" name="phone" placeholder='08023456789' pattern="[0]{1}[0-9]{10}"
         onChange={e => setPhoneNumber(e.target.value.trim())} value={phoneNumber} required/>
+
+        <label>Amount:</label>
+        <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
+        onChange={e => setAmount(e.target.value.trim())} value={amount} required/>
     
         </fieldset>
     
@@ -89,7 +93,7 @@ const Donate = () => {
       {submitted? 
       successPage()
        :
-       registrationForm()
+       donationForm()
        }
     </div>
   );
