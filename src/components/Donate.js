@@ -7,32 +7,36 @@ const Donate = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [amount, setAmount] = useState('');
+    const [data, setData] = useState([]);
     const [submitted, setStatus] = useState(false);
-    const [uuid, setUUID] = useState(((Date.now().toString(36)).toUpperCase()))
 
     
     const makeDonation = async(e)=> {
         e.preventDefault()
-        //(Date.now().toString(36) +'-'+ Math.random().toString(36).substring(2)).toUpperCase()
-        setUUID((Date.now().toString(36)).toUpperCase());
-        const postParams = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(
-                {firstName, lastName, email,
-                phoneNumber, amount, uuid
-            })
-        }
-        await fetch(process.env.REACT_APP_DONATION_URL, postParams)
-        .then(res => {
-            if (res.status === 200) {
-              setStatus(true)
+        // const postParams = {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(
+        //         {firstName, lastName, email,
+        //         phoneNumber, amount
+        //     })
+        // }
+        // await fetch(process.env.REACT_APP_DONATION_URL, postParams)
+        // .then(res => {
+        //     if (res.status === 200) {
+        //       //setStatus(true)
+        //       //console.log(res);
+        //       let a = res.json
+        //       setData(a)
+        //       console.log(data.authorization_url);
                 
-                // setFirstName(''); setLastName(''); setEmail(''); 
-                // setPhoneNumber(''); setGender('');
+        //         // setFirstName(''); setLastName(''); setEmail(''); 
+        //         // setPhoneNumber(''); setGender('');
                 
-            }
-         })
+        //     }
+        //  })
+
+        
     }
 
     const donationForm = () => {
@@ -82,7 +86,7 @@ const Donate = () => {
         </div>
           <h1 className="success">Registration Successful</h1> 
           <br/>
-          <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{uuid}</b><br/><br/>Your ticket is on its way to your mail!</p>
+          <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{}</b><br/><br/>Your ticket is on its way to your mail!</p>
         {/* </div> */}
       </section>
       </form>)
