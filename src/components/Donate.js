@@ -71,7 +71,7 @@ const Donate = () => {
         <div className="cond2Div">
           <i className="checkmark">✓</i>
         </div>
-          <h1 className="success">Registration Successful</h1> 
+          <h1 className="success">Thank you for your Donation</h1> 
           <br/>
           <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{}</b><br/><br/>Your ticket is on its way to your mail!</p>
         {/* </div> */}
