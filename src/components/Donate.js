@@ -7,7 +7,7 @@ const Donate = () => {
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [amount, setAmount] = useState('');
-    const [data, setData] = useState([]);
+    const [redirectURL, setURL] = useState('');
     const [submitted, setStatus] = useState(false);
 
     
@@ -18,7 +18,7 @@ const Donate = () => {
             {firstName, lastName, email, phoneNumber, amount})
           .then(res => {
             if (res.status === 200) {
-              console.log(res.data);
+              window.location.replace(`${res.data}`)
             }
          })
           .catch((error)=> {
@@ -35,21 +35,21 @@ const Donate = () => {
         <h1 className='registerH1'> Make Donation</h1>
         <fieldset>
     
-        <label>First Name:</label>
+        {/* <label>First Name:</label>
         <input type="text" id="name" name="user_name" 
         onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
     
         <label>Surname:</label>
         <input type="text" id="name" name="user_name" 
-        onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
+        onChange={e => setLastName(e.target.value.trim())} value={lastName} required/> */}
       
         <label>Email:</label>
         <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
         onChange={e => setEmail(e.target.value.trim())} value={email} required/>
     
-        <label>Phone Number:</label>
+        {/* <label>Phone Number:</label>
         <input type="tel" id="phone" name="phone" placeholder='08023456789' pattern="[0]{1}[0-9]{10}"
-        onChange={e => setPhoneNumber(e.target.value.trim())} value={phoneNumber} required/>
+        onChange={e => setPhoneNumber(e.target.value.trim())} value={phoneNumber} required/> */}
 
         <label>Amount:</label>
         <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
