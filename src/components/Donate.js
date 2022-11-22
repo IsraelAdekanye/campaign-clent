@@ -73,7 +73,7 @@ const Donate = () => {
         </div>
           <h1 className="success">Thank you for your Donation</h1> 
           <br/>
-          <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{}</b><br/><br/>Your ticket is on its way to your mail!</p>
+          {/* <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{}</b><br/><br/>Your ticket is on its way to your mail!</p> */}
         {/* </div> */}
       </section>
       </form>)
