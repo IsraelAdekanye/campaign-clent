@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const Row = styled.div`
-    padding: 3rem 0rem 3rem 0rem;
-    align-items: center;
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 2rem 0rem 3rem 0rem;
+    align-items: center;
 `;
 
 export const Title = styled.p`
@@ -14,24 +17,37 @@ export const Title = styled.p`
 `;
 
 export const DonationForm = styled.form`
-justify-content: center;
+    justify-content: center;
+    align-items: center;        
 `;
 
 export const InDiv = styled.form`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 1rem 0rem 1rem 0rem;
     justify-content: center;
     justify-self: stretch;
 `;
 
 export const InnerDiv = styled.div`
-    margin: 0rem 1rem 0rem 1rem
+    margin: 1rem 1rem 0rem 1rem
 `;
 
 export const Label = styled.label`
     margin: 0rem 1rem 0rem 1rem
 `;
+
+export const SubmitBtnStyle = styled.div`
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+
+	@media screen and (max-width: 600px) {
+		padding-left: 1rem;
+	};
+`;
+
 
 export const Submit = styled.button`
 padding: 0.6rem 1rem;
@@ -42,5 +58,12 @@ border-radius: 0.5rem;
 transition: 0.2s ease-out;
 font-size: 1rem;
 font-weight: lighter;
-align-self: center;
+
+&:hover {
+    background: #f9b700;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    color: #000;
+    border: thick double #072886;
+};
 `;
