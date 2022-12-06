@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Row, Title, DonationForm, Label, Submit } from './DonateElements';
 import axios from "axios";
 const Donate = () => {
 
@@ -28,22 +29,23 @@ const Donate = () => {
 
     const donationForm = () => {
       return(
+        <Row>
         
-        <div className='row'>
-        <div className="col-md-12">
-        <form onSubmit={makeDonation}>
-        <h1 className='registerH1'> Make Donation</h1>
-        <fieldset>
+          <Title> Make Donation </Title>
+
+          <DonationForm onSubmit={makeDonation}>
+
+        
     
-        {/* <label>First Name:</label>
+        <Label>Surname</Label>
         <input type="text" id="name" name="user_name" 
         onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
     
-        <label>Surname:</label>
+        <Label>First Name</Label>
         <input type="text" id="name" name="user_name" 
-        onChange={e => setLastName(e.target.value.trim())} value={lastName} required/> */}
+        onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
       
-        <label>Email:</label>
+        <Label>E-mail</Label>
         <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
         onChange={e => setEmail(e.target.value.trim())} value={email} required/>
     
@@ -51,16 +53,13 @@ const Donate = () => {
         <input type="tel" id="phone" name="phone" placeholder='08023456789' pattern="[0]{1}[0-9]{10}"
         onChange={e => setPhoneNumber(e.target.value.trim())} value={phoneNumber} required/> */}
 
-        <label>Amount:</label>
+        <Label>Amount</Label>
         <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
         onChange={e => setAmount(e.target.value.trim())} value={amount} required/>
-    
-        </fieldset>
-    
-        <button type="submit">Donate</button>
-        </form>
-        </div>
-      </div>
+
+          <Submit type="submit">Donate</Submit>
+          </DonationForm>
+        </Row>
       )
     }
 
@@ -80,6 +79,10 @@ const Donate = () => {
     }
 
   return (
+    
+
+
+
     <div>
       {submitted? 
       successPage()
