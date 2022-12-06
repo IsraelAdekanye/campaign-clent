@@ -56,7 +56,7 @@ const Donate = () => {
           
               <InnerDiv>
                 <Label>Amount:</Label>
-                <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
+                <input type="text" id="amount" name="amount" placeholder='Enter an amount'
                 onChange={e => setAmount(e.target.value.trim())} value={amount} required/>
               </InnerDiv>
 
