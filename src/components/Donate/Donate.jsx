@@ -7,15 +7,19 @@ const Donate = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [amount, setAmount] = useState('');
-    const [redirectURL, setURL] = useState('');
-    const [submitted, setStatus] = useState(false);
 
     
     const makeDonation = async(e)=> {
         e.preventDefault()
-
-        await axios.post(process.env.REACT_APP_DONATION_URL, 
-            {firstName, lastName, email, amount})
+        
+        const postParams = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: 
+              {firstName, email, amount
+          }
+      }
+      await fetch(process.env.REACT_APP_DONATION_URL, postParams)
           .then(res => {
             if (res.status === 200) {
               window.location.replace(`${res.data}`)
@@ -72,33 +76,8 @@ const Donate = () => {
       )
     }
 
-    const successPage = () => {
-      return (<form>
-      <section>
-        {/* <div className="card"> */}
-        <div className="cond2Div">
-          <i className="checkmark">✓</i>
-        </div>
-          <h1 className="success">Thank you for your Donation</h1> 
-          <br/>
-          {/* <p>Thank you <b>{firstName}</b> <br/><br/> Your Reservation Code is <br/><b>{}</b><br/><br/>Your ticket is on its way to your mail!</p> */}
-        {/* </div> */}
-      </section>
-      </form>)
-    }
-
   return (
-    
-
-
-
-    <div>
-      {submitted? 
-      successPage()
-       :
-       donationForm()
-       }
-    </div>
+   donationForm()
   );
 }
 
