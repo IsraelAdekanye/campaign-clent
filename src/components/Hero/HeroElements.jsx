@@ -123,6 +123,11 @@ export const HeroBtn = styled.button`
 	font-size: 1.2rem;
 	font-weight: lighter;
 
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	&:hover {
 		background: #f9b700;
 		transition: 0.2s ease-out;

@@ -31,7 +31,7 @@ function Hero() {
 						<HeroP>Crowdfund <br></br>Senator Abiru's <br></br> Re-Election Campaign</HeroP>
 					
 						<HeroBtnStyle>
-							<HeroBtn>About Tokunbo Abiru</HeroBtn>
+							<HeroBtn><a href='https://www.tokunboabiru.org/about'>About Tokunbo Abiru</a></HeroBtn>
 							<HeroBtn>Make Donations</HeroBtn>
 						</HeroBtnStyle>
 

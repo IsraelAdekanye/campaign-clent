@@ -6,7 +6,6 @@ const Donate = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
     const [amount, setAmount] = useState('');
     const [redirectURL, setURL] = useState('');
     const [submitted, setStatus] = useState(false);
@@ -16,7 +15,7 @@ const Donate = () => {
         e.preventDefault()
 
         await axios.post(process.env.REACT_APP_DONATION_URL, 
-            {firstName, lastName, email, phoneNumber, amount})
+            {firstName, lastName, email, amount})
           .then(res => {
             if (res.status === 200) {
               window.location.replace(`${res.data}`)
