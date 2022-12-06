@@ -42,10 +42,7 @@ export const SubmitBtnStyle = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-
-	@media screen and (max-width: 600px) {
-		padding-left: 1rem;
-	};
+    margin: 3rem 0rem 0rem 0rem
 `;
 
 

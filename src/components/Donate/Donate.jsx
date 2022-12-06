@@ -37,19 +37,19 @@ const Donate = () => {
             <InDiv>
 
               <InnerDiv>
-                <Label>Surname:</Label>
+                <Label>Name:  </Label>
                 <input type="text" id="name" name="user_name" 
                 onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
               </InnerDiv>
         
-              <InnerDiv>
+              {/* <InnerDiv>
                 <Label>First Name:</Label>
                 <input type="text" id="name" name="user_name" 
                 onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
-              </InnerDiv>
+              </InnerDiv> */}
 
               <InnerDiv>
-                <Label>E-mail:</Label>
+                <Label>Email:       </Label>
                 <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
                 onChange={e => setEmail(e.target.value.trim())} value={email} required/>
               </InnerDiv>
