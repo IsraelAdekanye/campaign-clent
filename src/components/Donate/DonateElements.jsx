@@ -11,6 +11,10 @@ export const DonationForm = styled.form`
 
 `;
 
+export const InnerDiv = styled.div`
+
+`;
+
 export const Label = styled.label`
 
 `;

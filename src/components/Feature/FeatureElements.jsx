@@ -39,6 +39,11 @@ export const FeatureButton = styled.button`
 	transition: 0.2s ease-out;
 	border: thick double #f9b700;
 
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	&:hover {
 		color: #000;
 		background: #f9b700;
