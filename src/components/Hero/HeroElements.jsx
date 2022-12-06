@@ -136,5 +136,15 @@ export const HeroBtn = styled.button`
 		margin-right: 1rem;
 		margin-left: 1rem;
 		padding: 0.6rem 0.6rem;
+
+		&:hover {
+		background: #f9b700;
+		transition: 0.2s ease-out;
+		cursor: pointer;
+		color: #000;
+		border: thick double #072886;
+	}
 	};
+
+	
 `;
