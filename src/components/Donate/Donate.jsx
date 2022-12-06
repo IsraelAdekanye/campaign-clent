@@ -65,7 +65,6 @@ const Donate = () => {
 
             </InDiv>
             
-
             <Submit type="submit">Donate</Submit>
 
           </DonationForm>
