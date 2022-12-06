@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Title, DonationForm, InnerDiv, Label, Submit } from './DonateElements';
+import { Row, Title, DonationForm, InDiv, InnerDiv, Label, Submit } from './DonateElements';
 import axios from "axios";
 const Donate = () => {
 
@@ -34,29 +34,37 @@ const Donate = () => {
 
           <DonationForm onSubmit={makeDonation}>
 
-            <InnerDiv>
-              <Label>Surname</Label>
-              <input type="text" id="name" name="user_name" 
-              onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
-            </InnerDiv>
-      
-            <InnerDiv>
-              <Label>First Name</Label>
-              <input type="text" id="name" name="user_name" 
-              onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
-            </InnerDiv>
-      
-            <InnerDiv>
-              <Label>E-mail</Label>
-              <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
-              onChange={e => setEmail(e.target.value.trim())} value={email} required/>
-            </InnerDiv>
+            <InDiv>
+
+              <InnerDiv>
+                <Label>Surname</Label>
+                <input type="text" id="name" name="user_name" 
+                onChange={e => setFirstName(e.target.value.trim())} value={firstName} required/>
+              </InnerDiv>
         
-            <InnerDiv>
-              <Label>Amount</Label>
-              <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
-              onChange={e => setAmount(e.target.value.trim())} value={amount} required/>
-            </InnerDiv>
+              <InnerDiv>
+                <Label>First Name</Label>
+                <input type="text" id="name" name="user_name" 
+                onChange={e => setLastName(e.target.value.trim())} value={lastName} required/>
+              </InnerDiv>
+            </InDiv>
+
+            <InDiv>
+
+              <InnerDiv>
+                <Label>E-mail</Label>
+                <input type="email" id="mail" name="user_email" placeholder='example@abc.com'
+                onChange={e => setEmail(e.target.value.trim())} value={email} required/>
+              </InnerDiv>
+          
+              <InnerDiv>
+                <Label>Amount</Label>
+                <input type="text" id="amount" name="user_email" placeholder='Enter an amount'
+                onChange={e => setAmount(e.target.value.trim())} value={amount} required/>
+              </InnerDiv>
+
+            </InDiv>
+            
 
             <Submit type="submit">Donate</Submit>
 

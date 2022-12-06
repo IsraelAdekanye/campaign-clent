@@ -21,6 +21,7 @@ export const FeatureContainer = styled.div`
 
 	h1 {
 		font-size: clamp(3rem, 3vw, 3rem);
+		color: #f9b700;
 	}
 
 	p {
