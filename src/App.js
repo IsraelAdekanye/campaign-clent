@@ -10,6 +10,7 @@ import Donate from './components/Donate/Donate';
 function App() {
 	return (
 		<Router>
+			fjd
 			<GlobalStyle />
 			<Hero /> 
 			{/* <Products heading='Choose your favourite' data={productData} />*/}
