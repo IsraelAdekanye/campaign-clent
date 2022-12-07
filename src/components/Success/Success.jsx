@@ -1,16 +1,18 @@
 import React from 'react';
-
+import { MasterDv, Success, Cond2Div, CheckMark, Section, Paragraph } from './SuccessElements';
 const Success = () => {
 
   return (
-    <section>
-    <div className="cond2Div">
-      <i className="checkmark">✓</i>
-    </div>
-      <h1 className="success">Donation Successful</h1> 
-      <br/>
-      <p>Thank you</p>
-  </section>
+    <MasterDv>
+      <Section>
+        <Cond2Div>
+          <CheckMark>✓</CheckMark>
+        </Cond2Div>
+        <Success>Donation Successful</Success>
+        <br/>
+        <Paragraph>Thank You!</Paragraph>
+      </Section>
+    </MasterDv>
   );
 }
 
