@@ -1,9 +1,11 @@
 import React from 'react';
-import { MasterDv, Success, Cond2Div, CheckMark, Section, Paragraph } from './SuccessElements';
-const Success = () => {
+import { MasterDiv, Success, Cond2Div, CheckMark, Section, Paragraph } from './SuccessElements';
+//import '../App.css';
+
+const SuccessPage = () => {
 
   return (
-    <MasterDv>
+    <MasterDiv>
       <Section>
         <Cond2Div>
           <CheckMark>✓</CheckMark>
@@ -12,8 +14,8 @@ const Success = () => {
         <br/>
         <Paragraph>Thank You!</Paragraph>
       </Section>
-    </MasterDv>
+    </MasterDiv>
   );
 }
 
-export default Success;
+export default SuccessPage;
