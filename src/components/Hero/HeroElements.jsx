@@ -49,7 +49,7 @@ export const HeroInnerItem = styled.div`
 
 	@media screen and (max-width: 600px) {
 		width: 80vw;
-		margin: -15rem 2rem 2rem 2rem;
+		margin: -10rem 2rem 2rem 2rem;
 		
 	};
 `;
@@ -90,7 +90,7 @@ export const HeroImage = styled.div`
 	width: 50%;
 
 	@media screen and (max-width: 600px) {
-		background-size: 22rem 25rem;
+		background-size: 18rem 20rem;
 		background-position: center;
 		background-repeat: no-repeat;
 		width: 115%;
