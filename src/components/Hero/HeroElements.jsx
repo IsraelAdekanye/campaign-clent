@@ -49,7 +49,7 @@ export const HeroInnerItem = styled.div`
 
 	@media screen and (max-width: 600px) {
 		width: 80vw;
-		margin: -10rem 2rem 2rem 2rem;
+		margin: -12rem 2rem 2rem 2rem;
 		
 	};
 `;
