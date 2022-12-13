@@ -17,12 +17,14 @@ export const Section = styled.section`
 
 export const Cond2Div = styled.div`
     border-radius:20px; 
-    height:200px; 
+    height:20rem; 
     width:20rem; 
     //background: #F8FAF5; 
-    margin:0 auto;
-    margin-top: 30%;
+    margin: auto;
+    margin-top: 20%;
     align-items: center;
+    display: flex;
+	flex-direction: column;
 `;
 
 export const CheckMark = styled.i`
@@ -53,7 +55,7 @@ export const Button = styled.button`
 	padding: 1rem 1rem;
 	border: none;
 	background: #072886;
-    margin: 1rem;
+    margin: 1.2rem 0rem 1.2rem 0rem;
 	color: #fff;
 	border-radius: 0.5rem;
 	transition: 0.2s ease-out;
