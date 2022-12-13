@@ -4,10 +4,9 @@ export const MasterDiv = styled.div`
     max-width: 100%;
     background: #f4f7f8;
     border-radius: 8px;
-    align-items: center;
 `;
 
-export const InDiv = styled.div`
+export const Section = styled.section`
     text-align: center;
     padding: 40px 0;
     background: #EBF0F5;
@@ -16,17 +15,62 @@ export const InDiv = styled.div`
     width: 100%;
 `;
 
+export const Cond2Div = styled.div`
+    border-radius:20px; 
+    height:200px; 
+    width:20rem; 
+    //background: #F8FAF5; 
+    margin:0 auto;
+    margin-top: 30%;
+    align-items: center;
+`;
+
+export const CheckMark = styled.i`
+    color: #9ABC66;
+    font-size: 100px;
+    line-height: 200px;
+    margin-left:-15px;
+`;
+
+export const Success = styled.h1`
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+`;
+
+export const Paragraph = styled.p`
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+`;
+
 export const Button = styled.button`
     display: flex;
 	flex-direction: column;
 	padding: 1rem 1rem;
 	border: none;
 	background: #072886;
-    margin: 2rem;
+    margin: 1rem;
 	color: #fff;
 	border-radius: 0.5rem;
 	transition: 0.2s ease-out;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: lighter;
     align-items: center;
+
+    a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:hover {
+		background: #f9b700;
+		transition: 0.2s ease-out;
+		cursor: pointer;
+		color: #000;
+		border: thick double #072886;
+	};
 `;

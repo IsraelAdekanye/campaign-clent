@@ -21,7 +21,7 @@ export const Cond2Div = styled.div`
     width:200px; 
     background: #F8FAF5; 
     margin:0 auto;
-    margin-top: 30%;
+    margin-top: 15%;
 `;
 
 export const CheckMark = styled.i`

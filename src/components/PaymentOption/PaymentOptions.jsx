@@ -1,22 +1,17 @@
 import React from 'react';
-//import { MasterDiv, InDiv, Button } from './PaymentOptionsElements';
-import { MasterDiv, Success, Cond2Div, CheckMark, Section, Paragraph } from './SuccessElements';
+import {  MasterDiv, Cond2Div, Section, Button } from './PaymentOptionsElements';
 
 const PaymentOptions = () => {
     return (
         <MasterDiv>
-            <InDiv>
-                <Button>
-                    Pay Online Now
-                </Button>
-                <Button>
-                    Make Direct Transfer
-                </Button>
-                <Button>
-                    Pay With Cheque
-                </Button>
-            </InDiv>
-        </MasterDiv>
+      <Section>
+        <Cond2Div>
+          <Button><a href='https://paystack.com/pay/tokunbo-abiru'>Pay Online Now</a></Button>
+          <Button>Make Direct Transfer</Button>
+          <Button>Pay With Cheque</Button>
+        </Cond2Div>
+      </Section>
+    </MasterDiv>
     )
 }
 

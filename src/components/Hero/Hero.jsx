@@ -32,7 +32,7 @@ function Hero() {
 					
 						<HeroBtnStyle>
 							<HeroBtn><a href='https://www.tokunboabiru.org/about'>About Tokunbo Abiru</a></HeroBtn>
-							<HeroBtn><a href='https://paystack.com/pay/tokunbo-abiru'>Make Donations</a></HeroBtn>
+							<HeroBtn ><a href='/PaymentOptions'>Make Donations</a></HeroBtn>
 						</HeroBtnStyle>
 
 					</HeroInnerItem>
