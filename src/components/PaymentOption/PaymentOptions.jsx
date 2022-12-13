@@ -4,7 +4,9 @@ import { MasterDiv, InDiv } from './PaymentOptionsElements';
 const PaymentOptions = () => {
     return (
         <MasterDiv>
-            
+            <InDiv>
+                
+            </InDiv>
         </MasterDiv>
     )
 }
