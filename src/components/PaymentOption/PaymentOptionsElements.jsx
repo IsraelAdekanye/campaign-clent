@@ -5,3 +5,12 @@ export const MasterDiv = styled.div`
     background: #f4f7f8;
     border-radius: 8px;
 `;
+
+export const InDiv = styled.div`
+    text-align: center;
+    padding: 40px 0;
+    background: #EBF0F5;
+    height: 800px;
+    align-items: center;
+    width: 100%;
+`;
