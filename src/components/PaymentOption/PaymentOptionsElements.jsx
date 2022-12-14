@@ -10,8 +10,6 @@ export const MasterDiv = styled.div`
 `;
 
 export const Section = styled.section`
-    background-color: #f9b700;
-	background-image: url(${FeaturePic});
     text-align: center;
     padding: 40px 0;
     //background: #EBF0F5;
