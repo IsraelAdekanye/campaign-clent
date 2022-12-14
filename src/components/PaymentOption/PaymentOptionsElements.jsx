@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FeaturePic from '../../images/5LGs.png';
 
 export const MasterDiv = styled.div`
     background-color: #f9b700;
