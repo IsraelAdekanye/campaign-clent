@@ -10,6 +10,8 @@ export const MasterDiv = styled.div`
 `;
 
 export const Section = styled.section`
+    background-color: #f9b700;
+	background-image: url(${FeaturePic});
     text-align: center;
     padding: 40px 0;
     background: #EBF0F5;
@@ -30,12 +32,7 @@ export const Cond2Div = styled.div`
 	flex-direction: column;
 `;
 
-export const CheckMark = styled.i`
-    color: #9ABC66;
-    font-size: 100px;
-    line-height: 200px;
-    margin-left:-15px;
-`;
+
 
 export const Success = styled.h1`
     color: #88B04B;
