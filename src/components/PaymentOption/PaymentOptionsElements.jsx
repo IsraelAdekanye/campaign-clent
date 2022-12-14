@@ -5,7 +5,7 @@ export const MasterDiv = styled.div`
     background-color: #f9b700;
 	background-image: url(${FeaturePic});
     max-width: 100%;
-    background: #f4f7f8;
+    //background: #f4f7f8;
     border-radius: 8px;
 `;
 
@@ -14,7 +14,7 @@ export const Section = styled.section`
 	background-image: url(${FeaturePic});
     text-align: center;
     padding: 40px 0;
-    background: #EBF0F5;
+    //background: #EBF0F5;
     height: 800px;
     align-items: center;
     width: 100%;
