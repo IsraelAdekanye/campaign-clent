@@ -34,13 +34,7 @@ export const Cond2Div = styled.div`
 
 
 
-export const Success = styled.h1`
-    color: #88B04B;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    margin-bottom: 10px;
-`;
+
 
 export const Paragraph = styled.p`
     color: #404F5E;
