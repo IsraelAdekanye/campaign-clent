@@ -32,12 +32,6 @@ export const Cond2Div = styled.div`
 	flex-direction: column;
 `;
 
-
-
-
-
-
-
 export const Button = styled.button`
     display: flex;
 	flex-direction: column;
