@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MasterDiv = styled.div`
+    background-color: #f9b700;
     max-width: 100%;
     background: #f4f7f8;
     border-radius: 8px;
