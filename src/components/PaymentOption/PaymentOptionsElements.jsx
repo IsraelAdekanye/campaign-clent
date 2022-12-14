@@ -4,13 +4,11 @@ import FeaturePic from '../../images/5LGs.png';
 export const MasterDiv = styled.div`
     background-color: #f9b700;
 	background-image: url(${FeaturePic});
-    max-width: 100%;
-    //background: #f4f7f8;
-    border-radius: 8px;
+    max-width: 100vw;
 `;
 
 export const Section = styled.section`
-    text-align: center;
+    //text-align: center;
     padding: 40px 0;
     //background: #EBF0F5;
     height: 800px;
@@ -20,7 +18,8 @@ export const Section = styled.section`
 
 export const Cond2Div = styled.div`
     border-radius:20px; 
-    height:20rem; 
+	//height: calc(100vh-180px);
+    //height:20rem; 
     width:20rem; 
     //background: #F8FAF5; 
     margin: auto;
