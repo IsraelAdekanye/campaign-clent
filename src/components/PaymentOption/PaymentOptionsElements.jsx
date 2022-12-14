@@ -36,12 +36,7 @@ export const Cond2Div = styled.div`
 
 
 
-export const Paragraph = styled.p`
-    color: #404F5E;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-size:20px;
-    margin: 0;
-`;
+
 
 export const Button = styled.button`
     display: flex;
