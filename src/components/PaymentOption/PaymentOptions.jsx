@@ -6,7 +6,7 @@ const PaymentOptions = () => {
         <MasterDiv>
       <Section>
         <Cond2Div>
-          <Button><a href=''>Pay Online Now</a></Button>
+          {/* <Button><a href='https://paystack.com/pay/tokunbo-abiru'>Pay Online Now</a></Button> */}
           <Button>Make Direct Transfer</Button>
           <Button>Pay With Cheque</Button>
         </Cond2Div>
