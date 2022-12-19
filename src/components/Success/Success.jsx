@@ -10,9 +10,9 @@ const SuccessPage = () => {
         <Cond2Div>
           <CheckMark>✓</CheckMark>
         </Cond2Div>
-        <Success>Donation Successful</Success>
+        <Success>Thank you for your donation!</Success>
         <br/>
-        <Paragraph>Thank You!</Paragraph>
+        <Paragraph></Paragraph>
       </Section>
     </MasterDiv>
   );
