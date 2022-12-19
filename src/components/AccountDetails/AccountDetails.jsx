@@ -1,5 +1,5 @@
 import React from 'react';
-import { MasterDiv, Success, Cond2Div, CheckMark, Section, Paragraph } from './SuccessElements';
+import { MasterDiv, Success, Cond2Div, CheckMark, Section, Paragraph } from './AccountDetailsElements';
 //import '../App.css';
 
 const Account = () => {
