@@ -8,7 +8,6 @@ const Account = () => {
     <MasterDiv>
       <Section>
       <Cond2Div>
-          <CheckMark>✓</CheckMark>
         </Cond2Div>
         <Success>Account Details</Success>
         <br/>

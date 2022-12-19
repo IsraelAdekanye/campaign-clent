@@ -12,7 +12,7 @@ export const Section = styled.section`
     padding: 40px 0;
     background: #EBF0F5;
     height: 800px;
-    align-items: center;
+    align-items: center bottom;
     width: 100%;
 `;
 
@@ -22,14 +22,14 @@ export const Cond2Div = styled.div`
     width:200px; 
     background: #F8FAF5; 
     margin:0 auto;
-    margin-top: 15%;
+    margin-top: 10%;
 
     background-image: url(${HeroImagePic});
-	//height: 100vh;
+	height: 28vh;
 	background-position: center;
-	background-size: 35rem 40rem;
+	background-size: 15rem 18rem;
 	background-repeat: no-repeat;
-	//width: 50%;
+	width: 15vw;
 `;
 
 export const CheckMark = styled.i`
