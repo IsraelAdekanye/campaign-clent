@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import HeroImagePic from '../../images/AbiruSelected.png';
 
 export const MasterDiv = styled.div`
     max-width: 100%;
@@ -22,6 +23,13 @@ export const Cond2Div = styled.div`
     background: #F8FAF5; 
     margin:0 auto;
     margin-top: 15%;
+
+    background-image: url(${HeroImagePic});
+	//height: 100vh;
+	background-position: center;
+	background-size: 35rem 40rem;
+	background-repeat: no-repeat;
+	//width: 50%;
 `;
 
 export const CheckMark = styled.i`
