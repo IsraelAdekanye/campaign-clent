@@ -7,13 +7,16 @@ const Account = () => {
   return (
     <MasterDiv>
       <Section>
+      <Cond2Div>
+          <CheckMark>✓</CheckMark>
+        </Cond2Div>
         <Success>Account Details</Success>
         <br/>
-        <Paragraph><b>Bank Name:</b> <br></br>Sterling Bank</Paragraph>
+        <Paragraph><b>Bank Name</b> <br></br>Sterling Bank</Paragraph>
         <br/>
-        <Paragraph><b>Account Name:</b> <br></br>Office Of Senator Mukhail Adetokunbo Abiru (Campaign Account)</Paragraph>
+        <Paragraph><b>Account Name</b> <br></br>Office Of Senator Mukhail Adetokunbo Abiru</Paragraph>
         <br/>
-        <Paragraph><b>Account Number:</b> <br></br>0091532131</Paragraph>
+        <Paragraph><b>Account Number</b> <br></br>0091532131</Paragraph>
       </Section>
     </MasterDiv>
   );
