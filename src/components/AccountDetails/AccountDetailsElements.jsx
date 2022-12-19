@@ -30,6 +30,15 @@ export const Cond2Div = styled.div`
 	background-size: 15rem 18rem;
 	background-repeat: no-repeat;
 	width: 15vw;
+
+    @media screen and (max-width: 600px) {
+		background-size: 15rem 17rem;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 40%;
+        height: 28vh;
+		//margin: -20rem 2rem -20rem 2rem;
+	};
 `;
 
 export const CheckMark = styled.i`
