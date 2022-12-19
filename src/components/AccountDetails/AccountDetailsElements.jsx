@@ -12,8 +12,10 @@ export const Section = styled.section`
     padding: 40px 0;
     background: #EBF0F5;
     height: 800px;
-    align-items: center bottom;
+    align-items: center;
     width: 100%;
+    display: flex;
+	flex-direction: column;
 `;
 
 export const Cond2Div = styled.div`
@@ -27,7 +29,7 @@ export const Cond2Div = styled.div`
     background-image: url(${HeroImagePic});
 	height: 28vh;
 	background-position: center;
-	background-size: 15rem 18rem;
+	background-size: 15rem 17rem;
 	background-repeat: no-repeat;
 	width: 15vw;
 
@@ -37,7 +39,6 @@ export const Cond2Div = styled.div`
 		background-repeat: no-repeat;
 		width: 40%;
         height: 28vh;
-		//margin: -20rem 2rem -20rem 2rem;
 	};
 `;
 
@@ -61,4 +62,32 @@ export const Paragraph = styled.p`
     font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
     font-size:20px;
     margin: 0;
+`;
+
+export const Button = styled.button`
+    display: flex;
+	flex-direction: column;
+	padding: 1rem 1rem;
+	border: none;
+	background: #072886;
+    margin: 1.2rem 0rem 1.2rem 0rem;
+	color: #fff;
+	border-radius: 0.5rem;
+	transition: 0.2s ease-out;
+	font-size: 1rem;
+	font-weight: lighter;
+    align-items: center;
+
+    a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:hover {
+		background: #EBF0F5;
+		transition: 0.2s ease-out;
+		cursor: pointer;
+		color: #000;
+		border: thick double #072886;
+	};
 `;
