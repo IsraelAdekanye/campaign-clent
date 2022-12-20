@@ -14,7 +14,7 @@ export const HeroContent = styled.div`
 	background: #f9b700;
 	height: calc(100vh-80px);
 	max-height: 100%;
-	width: 100vw;
+	width: 100%;
 	padding: 0rem calc((100vw - 1300px) / 2);
 `;
 
