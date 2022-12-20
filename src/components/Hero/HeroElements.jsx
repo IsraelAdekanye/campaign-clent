@@ -28,7 +28,7 @@ export const HeroItems = styled.div`
 	height: calc(100vh-80px);
 	max-height: 100vh;
 	padding-right: 8rem;
-	width: 100vw;
+	width: 100%;
 	color: #fff;
 	line-height: 1;
 	font-weight: bold;
