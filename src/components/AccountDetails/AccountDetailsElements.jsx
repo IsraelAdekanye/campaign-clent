@@ -37,7 +37,7 @@ export const Cond2Div = styled.div`
 		background-size: 15rem 17rem;
 		background-position: center;
 		background-repeat: no-repeat;
-		width: 0%;
+		width: 40%;
         height: 28vh;
 	};
 `;
