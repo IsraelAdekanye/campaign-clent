@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
 	//background-image: url(${ImgBg});
 	// height: 100vh;
 	// background-position: center;
-	// background-size: co;
+	// background-size: c;
 `;
 
 export const HeroContent = styled.div`
