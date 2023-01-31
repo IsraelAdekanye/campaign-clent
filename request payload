@@ -1,0 +1,22 @@
+-----------------------------29490526353037064072901191730
+Content-Disposition: form-data; name="totalpoll[choices][2476c662-251c-420a-b982-82f86c0cc7fd][]"
+
+e38eb2c9-c98a-4697-9939-d257978b655f
+-----------------------------29490526353037064072901191730
+Content-Disposition: form-data; name="totalpoll[screen]"
+
+vote
+-----------------------------29490526353037064072901191730
+Content-Disposition: form-data; name="totalpoll[pollId]"
+
+5722
+-----------------------------29490526353037064072901191730
+Content-Disposition: form-data; name="totalpoll[action]"
+
+vote
+-----------------------------29490526353037064072901191730--
+
+
+
+POLL ID: totalpoll[choices][2476c662-251c-420a-b982-82f86c0cc7fd][]
+Candidate ID: e38eb2c9-c98a-4697-9939-d257978b655f
